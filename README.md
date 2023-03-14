@@ -4,7 +4,9 @@ Lệnh cài giao diện cho VPS 4-24 nè. Bảo đảm mượt mà không giật
 Ưu điểm: sử dụng docker ko làm lỗi và gây rác vps 🙂 sai thì chỉ việc xóa container đi hoặc tạo container mới.
 
 apt update
+
 apt install docker.io -y && apt install docker-compose
+
 docker run -d -p 6080:80 fredblgr/ubuntu-novnc:20.04
 
 Sau đó truy cập: http://ip:6080
