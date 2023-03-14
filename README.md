@@ -6,6 +6,7 @@ Lệnh cài giao diện cho VPS 4-24 nè. Bảo đảm mượt mà không giật
 apt update
 apt install docker.io -y && apt install docker-compose
 docker run -d -p 6080:80 fredblgr/ubuntu-novnc:20.04
+
 Sau đó truy cập: http://ip:6080
 
 Nhớ mở port cho 6080 trước nhé
