@@ -1,5 +1,16 @@
 # docker-ubuntu-vnc-desktop
 
+Lệnh cài giao diện cho VPS 4-24 nè. Bảo đảm mượt mà không giật nhé
+Ưu điểm: sử dụng docker ko làm lỗi và gây rác vps 🙂 sai thì chỉ việc xóa container đi hoặc tạo container mới.
+apt update
+apt install docker.io -y && apt install docker-compose
+docker run -d -p 6080:80 fredblgr/ubuntu-novnc:20.04
+Sau đó truy cập: http://ip:6080
+
+Nhớ mở port cho 6080 trước nhé
+Các option khác như bảo vệ bằng mật khẩu, mở vnc,... có tại github của tác giả:
+https://github.com/fcwu/docker-ubuntu-vnc-desktop
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/dorowu/ubuntu-desktop-lxde-vnc.svg)](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/)
 [![Docker Stars](https://img.shields.io/docker/stars/dorowu/ubuntu-desktop-lxde-vnc.svg)](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/)
 
